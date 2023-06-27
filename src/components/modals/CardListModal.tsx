@@ -1,16 +1,17 @@
-import React, { useState, useRef, useEffect, useMemo } from 'react';
 import {
-  Modal,
-  ModalOverlay,
-  ModalContent,
-  ModalHeader,
-  ModalCloseButton,
-  ModalBody,
-  ModalFooter,
   FormControl,
   FormLabel,
   Input,
+  Modal,
+  ModalBody,
+  ModalCloseButton,
+  ModalContent,
+  ModalFooter,
+  ModalHeader,
+  ModalOverlay,
 } from '@chakra-ui/react';
+import React, { useRef, useState } from 'react';
+
 import { useListNFT } from '@/components/executes/useListNFT';
 
 type ListModalProps = {
@@ -44,15 +45,15 @@ export default function CardListModal(props: ListModalProps) {
         initialFocusRef={initialRef}
         isOpen={isOpen}
         onClose={onClose}
-        size={'xl'}
+        size='xl'
       >
         <ModalOverlay />
         <ModalContent bgColor='#0E1114'>
           <ModalHeader color='white'>SELL NFT</ModalHeader>
-          <ModalCloseButton color={'white'} />
+          <ModalCloseButton color='white' />
           <ModalBody pb={6} className='space-y-5'>
             <FormControl>
-              <FormLabel color='#7D8DA7' fontSize={'md'}>
+              <FormLabel color='#7D8DA7' fontSize='md'>
                 Enter price
               </FormLabel>
               <Input

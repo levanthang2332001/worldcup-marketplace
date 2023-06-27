@@ -1,5 +1,5 @@
-import { useContractWrite, usePrepareContractWrite } from 'wagmi';
 import { parseEther } from 'viem';
+import { useContractWrite } from 'wagmi';
 
 import ABINFT from '@/ABI/NFT.json';
 

@@ -1,7 +1,8 @@
-import { useQuery, gql } from '@apollo/client';
-import { Token } from '@/__generated__/graphql';
-import { useMemo } from 'react';
+import { gql, useQuery } from '@apollo/client';
 import { ethers } from 'ethers';
+import { useMemo } from 'react';
+
+import { Token } from '@/__generated__/graphql';
 
 type TokenResponse = {
   tokens: Token[];

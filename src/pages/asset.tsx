@@ -1,3 +1,6 @@
+import React, { useEffect, useState } from 'react';
+import { useAccount } from 'wagmi';
+
 import { CardNFTs } from '@/components/cards/Card';
 import Header from '@/components/layout/Header';
 import {
@@ -5,8 +8,6 @@ import {
   GetDataNFTs,
   GetQueryListing,
 } from '@/components/queries/index';
-import React, { useState, useEffect } from 'react';
-import { useAccount } from 'wagmi';
 
 const CONTRACT_MARKET: string | undefined = process.env.CONTRACT_MARKETPLACE;
 

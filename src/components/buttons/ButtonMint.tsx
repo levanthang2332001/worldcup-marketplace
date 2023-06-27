@@ -1,13 +1,12 @@
-import React, { useEffect, useState } from 'react';
+import { useToast } from '@chakra-ui/react';
+import React, { useEffect } from 'react';
 import { IconType } from 'react-icons';
-import { useAccount, useConnect, useContractWrite } from 'wagmi';
-import { parseEther } from 'viem';
-import { ToastContainer, toast } from 'react-toastify';
+import { useAccount, useConnect } from 'wagmi';
+import { InjectedConnector } from 'wagmi/connectors/injected';
 
 import clsxm from '@/lib/clsxm';
-import { InjectedConnector } from 'wagmi/connectors/injected';
+
 import { useMintNFT } from '@/components/executes/useMintNFT';
-import { useToast } from '@chakra-ui/react';
 
 const ButtonVariant = ['primary', 'secondary'] as const;
 const ButtonSize = ['sm', 'base'] as const;

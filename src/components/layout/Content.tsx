@@ -1,9 +1,11 @@
-import React from 'react';
 import Image from 'next/image';
+import React from 'react';
 
 import data from '@/data/data.json';
-import FootBall from '~/images/football.png';
+
 import { ButtonMint } from '@/components/buttons/ButtonMint';
+
+import FootBall from '~/images/football.png';
 
 // Function to get four data tier in json
 const generateEightCountry = () => {

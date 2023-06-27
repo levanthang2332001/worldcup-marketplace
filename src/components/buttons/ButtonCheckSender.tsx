@@ -1,7 +1,9 @@
-import React, { useState, useEffect, useMemo } from 'react';
-import { ButtonBuy } from '@/components/buttons/index';
-import { ButtonUnList } from './ButtonUnList';
+import React, { useMemo, useState } from 'react';
 import { useAccount } from 'wagmi';
+
+import { ButtonBuy } from '@/components/buttons/index';
+
+import { ButtonUnList } from './ButtonUnList';
 
 /*
   Check owner and connection address

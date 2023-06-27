@@ -1,9 +1,8 @@
 import { useContractWrite, usePrepareContractWrite } from 'wagmi';
-import { parseEther } from 'viem';
-
-import ABIMarket from '@/ABI/MARKETPLACE.json';
 
 import { BuyNFTsProps } from '@/components/buttons/types';
+
+import ABIMarket from '@/ABI/MARKETPLACE.json';
 
 const CONTRACT_MARKET: string | undefined = process.env.CONTRACT_MARKETPLACE;
 

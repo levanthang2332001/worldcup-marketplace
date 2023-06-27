@@ -1,10 +1,10 @@
-import * as React from 'react';
-import Link from 'next/link';
-
-import Layout from '@/components/layout/Layout';
-import Header from '@/components/layout/Header';
-import Content from '@/components/layout/Content';
 import Image from 'next/image';
+import Link from 'next/link';
+import * as React from 'react';
+
+import Content from '@/components/layout/Content';
+import Header from '@/components/layout/Header';
+import Layout from '@/components/layout/Layout';
 
 export default function HomePage() {
   return (
@@ -18,7 +18,10 @@ export default function HomePage() {
                 <div className='flex flex-col space-y-3 '>
                   <span className='text-lg text-[#7D8DA7]'>Total Reward</span>
                   <span className='text-2xl text-white'>$ 8.046.000</span>
-                  <Link href=''>
+                  <Link
+                    href='https://testnet.bscscan.com/token/0xffe375dbf4f4db18c2a391233130cd5a23af7cb0'
+                    target='_blank'
+                  >
                     <span className='text-xs text-white'>View Contract</span>
                   </Link>
                 </div>
@@ -41,7 +44,7 @@ export default function HomePage() {
                       <Image
                         width={30}
                         height={30}
-                        src={'/images/tier/Qatar.png'}
+                        src='/images/tier/Qatar.png'
                         alt='logo'
                       />
                       <span className='text-white'>QTA</span>
@@ -50,7 +53,7 @@ export default function HomePage() {
                       <Image
                         width={30}
                         height={30}
-                        src={'/images/tier/Ecuador.png'}
+                        src='/images/tier/Ecuador.png'
                         alt='logo'
                       />
                       <span className='text-white'>ECU</span>
@@ -66,7 +69,7 @@ export default function HomePage() {
                       <Image
                         width={30}
                         height={30}
-                        src={'/images/tier/Senegal.png'}
+                        src='/images/tier/Senegal.png'
                         alt='logo'
                       />
                       <span className='text-white'>SEN</span>
@@ -75,7 +78,7 @@ export default function HomePage() {
                       <Image
                         width={30}
                         height={30}
-                        src={'/images/tier/Netherlands.png'}
+                        src='/images/tier/Netherlands.png'
                         alt='logo'
                       />
                       <span className='text-white'>NED</span>
@@ -95,7 +98,7 @@ export default function HomePage() {
                       <Image
                         width={30}
                         height={30}
-                        src={'/images/tier/England.png'}
+                        src='/images/tier/England.png'
                         alt='logo'
                       />
                       <span className='text-white'>ENG</span>
@@ -104,7 +107,7 @@ export default function HomePage() {
                       <Image
                         width={30}
                         height={30}
-                        src={'/images/tier/Iran.png'}
+                        src='/images/tier/Iran.png'
                         alt='logo'
                       />
                       <span className='text-white'>IRN</span>
@@ -120,7 +123,7 @@ export default function HomePage() {
                       <Image
                         width={30}
                         height={30}
-                        src={'/images/tier/UnitedStates.png'}
+                        src='/images/tier/UnitedStates.png'
                         alt='logo'
                       />
                       <span className='text-white'>USA</span>
@@ -129,7 +132,7 @@ export default function HomePage() {
                       <Image
                         width={30}
                         height={30}
-                        src={'/images/tier/Wales.png'}
+                        src='/images/tier/Wales.png'
                         alt='logo'
                       />
                       <span className='text-white'>WAL</span>

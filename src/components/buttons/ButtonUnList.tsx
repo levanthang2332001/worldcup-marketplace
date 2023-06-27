@@ -1,7 +1,7 @@
-import { useUnListNFT } from '@/components/executes';
 import { useRouter } from 'next/router';
 import React, { useEffect } from 'react';
-import { useAccount } from 'wagmi';
+
+import { useUnListNFT } from '@/components/executes';
 
 type ButtonUnListProps = {
   tokenId: number | undefined;

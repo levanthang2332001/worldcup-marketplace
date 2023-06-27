@@ -1,11 +1,10 @@
+import { Skeleton } from '@chakra-ui/react';
 import React, { useEffect, useState } from 'react';
 
-import Header from '@/components/layout/Header';
-import { GetDataMarket } from '@/components/queries/GetDataMarket.ts';
 import { CardNFTs } from '@/components/cards/Card';
+import Header from '@/components/layout/Header';
 import { getDataCountry } from '@/components/queries/getCountry';
-import { useAccount } from 'wagmi';
-import { Skeleton } from '@chakra-ui/react';
+import { GetDataMarket } from '@/components/queries/GetDataMarket.ts';
 
 type ListedProps = {
   id: string;

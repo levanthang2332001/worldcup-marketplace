@@ -1,7 +1,6 @@
 import * as React from 'react';
 import { IconType } from 'react-icons';
-
-import { useAccount, useConnect, useEnsName } from 'wagmi';
+import { useAccount, useConnect } from 'wagmi';
 import { InjectedConnector } from 'wagmi/connectors/injected';
 
 import clsxm from '@/lib/clsxm';

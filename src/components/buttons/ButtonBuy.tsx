@@ -1,9 +1,10 @@
-import React, { useEffect, useState } from 'react';
+import { useToast } from '@chakra-ui/react';
+import React, { useEffect } from 'react';
 import { useAccount } from 'wagmi';
+
 import { BuyNFTsProps } from './types';
 import { Button } from '../buttons/index';
-import { useBuyNFT, useCheckApproved, useApproveNFTs } from '../executes/index';
-import { useToast } from '@chakra-ui/react';
+import { useBuyNFT } from '../executes/index';
 
 export const ButtonBuy = (props: BuyNFTsProps) => {
   const toast = useToast();

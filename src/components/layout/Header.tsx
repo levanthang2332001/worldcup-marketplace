@@ -1,11 +1,12 @@
-import * as React from 'react';
-
-import WCFI from '~/images/WCFI.png';
 import Image from 'next/image';
 import Link from 'next/link';
-import { Button } from '@/components/buttons/index';
-import { useAccount, useBalance } from 'wagmi';
+import * as React from 'react';
 import Skeleton from 'react-loading-skeleton';
+import { useAccount, useBalance } from 'wagmi';
+
+import { Button } from '@/components/buttons/index';
+
+import WCFI from '~/images/WCFI.png';
 
 export default function Header() {
   const { address } = useAccount();

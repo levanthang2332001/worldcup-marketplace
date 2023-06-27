@@ -1,15 +1,14 @@
+import { ApolloProvider } from '@apollo/client';
+import { ChakraProvider } from '@chakra-ui/react';
 import { AppProps } from 'next/app';
-
+import { bscTestnet } from 'viem/chains';
 import { configureChains, createConfig, WagmiConfig } from 'wagmi';
 import { publicProvider } from 'wagmi/providers/public';
+
 import '@/styles/globals.css';
 import '@/styles/colors.css';
 import '@/styles/styles.css';
 
-import { NextUIProvider, createTheme } from '@nextui-org/react';
-import { ChakraProvider } from '@chakra-ui/react';
-import { bscTestnet } from 'viem/chains';
-import { ApolloProvider } from '@apollo/client';
 import { WFCIMarket } from '@/apollo/client';
 
 const { publicClient, webSocketPublicClient } = configureChains(

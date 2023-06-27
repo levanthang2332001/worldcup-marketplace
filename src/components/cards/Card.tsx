@@ -1,11 +1,10 @@
-import React, { useEffect, useState } from 'react';
-import { Card, CardBody, Stack, Image } from '@chakra-ui/react';
+import { Card, CardBody, Image, Stack } from '@chakra-ui/react';
+import React, { useState } from 'react';
+
+import { ButtonCheckSender } from '@/components/buttons/ButtonCheckSender';
+import { ButtonList } from '@/components/buttons/ButtonList';
 
 import CardModal from '../modals/CardModal';
-import { ButtonBuy } from '@/components/buttons/index';
-import { ButtonList } from '@/components/buttons/ButtonList';
-import { useAccount } from 'wagmi';
-import { ButtonCheckSender } from '@/components/buttons/ButtonCheckSender';
 
 interface CardProps {
   id?: number;
@@ -36,7 +35,7 @@ export const CardNFTs = (props: CardProps) => {
         onClick={handleModal}
         key={id}
       >
-        <Card maxW='sm' className='rounded-2xl' bgColor={'black'}>
+        <Card maxW='sm' className='rounded-2xl' bgColor='black'>
           <CardBody className='overflow-hidden rounded-lg bg-[#0E1114]'>
             <Image
               src={trimmedImagePath}

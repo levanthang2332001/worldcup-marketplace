@@ -1,14 +1,12 @@
-import { useListNFT } from '@/components/executes/useListNFT';
 import {
-  Modal,
-  ModalOverlay,
-  ModalContent,
-  ModalHeader,
-  ModalCloseButton,
-  ModalBody,
-  ModalFooter,
-  Button,
   Image,
+  Modal,
+  ModalBody,
+  ModalCloseButton,
+  ModalContent,
+  ModalFooter,
+  ModalHeader,
+  ModalOverlay,
 } from '@chakra-ui/react';
 
 type ModalProps = {
@@ -30,8 +28,8 @@ export default function CardModal(props: ModalProps) {
       <Modal isOpen={isOpen} onClose={onClose} size='xl'>
         <ModalOverlay />
         <ModalContent bgColor='#0E1114'>
-          <ModalHeader textColor={'white'}>NFT Detail </ModalHeader>
-          <ModalCloseButton bgColor={'white'} />
+          <ModalHeader textColor='white'>NFT Detail </ModalHeader>
+          <ModalCloseButton bgColor='white' />
           <ModalBody>
             <div className='flex flex-row space-x-3'>
               <Image alt='Image NFTs' src={image} width={200} height={200} />
