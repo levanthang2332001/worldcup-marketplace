@@ -1,3 +1,3 @@
 # worldcup-marketplace
 
-Live: <a href="https://vercel.com/levanthang2332001/worldcup-marketplace" target="_blank">WCFI Marketplace</a>
+Live: <a href="https://worldcup-marketplace.vercel.app/" target="_blank">WCFI Marketplace</a>
