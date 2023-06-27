@@ -18,7 +18,10 @@ export default function HomePage() {
                 <div className='flex flex-col space-y-3 '>
                   <span className='text-lg text-[#7D8DA7]'>Total Reward</span>
                   <span className='text-2xl text-white'>$ 8.046.000</span>
-                  <Link href=''>
+                  <Link
+                    href='https://testnet.bscscan.com/token/0xffe375dbf4f4db18c2a391233130cd5a23af7cb0'
+                    target='_blank'
+                  >
                     <span className='text-xs text-white'>View Contract</span>
                   </Link>
                 </div>
