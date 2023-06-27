@@ -1,0 +1,162 @@
+[
+  {
+    "id": 1,
+    "country": "Brazil",
+    "rarity": "0.08"
+  },
+  {
+    "id": 2,
+    "country": "France",
+    "rarity": "0.10"
+  },
+  {
+    "id": 3,
+    "country": "England",
+    "rarity": "0.11"
+  },
+  {
+    "id": 4,
+    "country": "Spain",
+    "rarity": "0.14"
+  },
+  {
+    "id": 5,
+    "country": "Germany",
+    "rarity": "0.19"
+  },
+  {
+    "id": 6,
+    "country": "Argentina",
+    "rarity": "0.19"
+  },
+  {
+    "id": 7,
+    "country": "Belgium",
+    "rarity": "0.22"
+  },
+  {
+    "id": 8,
+    "country": "Portugal",
+    "rarity": "0.22"
+  },
+  {
+    "id": 9,
+    "country": "Netherlands",
+    "rarity": "0.16"
+  },
+  {
+    "id": 10,
+    "country": "Denmark",
+    "rarity": "0.56"
+  },
+  {
+    "id": 11,
+    "country": "Croatia",
+    "rarity": "0.65"
+  },
+  {
+    "id": 12,
+    "country": "Uruguay",
+    "rarity": "0.93"
+  },
+  {
+    "id": 13,
+    "country": "Poland",
+    "rarity": "1.21"
+  },
+  {
+    "id": 14,
+    "country": "Senegal",
+    "rarity": "1.21"
+  },
+  {
+    "id": 15,
+    "country": "United States",
+    "rarity": "1.49"
+  },
+  {
+    "id": 16,
+    "country": "Serbia",
+    "rarity": "1.49"
+  },
+  {
+    "id": 17,
+    "country": "Switzerland",
+    "rarity": "1.49"
+  },
+  {
+    "id": 18,
+    "country": "Mexico",
+    "rarity": "1.86"
+  },
+  {
+    "id": 19,
+    "country": "Wales",
+    "rarity": "1.86"
+  },
+  {
+    "id": 20,
+    "country": "Ghana",
+    "rarity": "2.80"
+  },
+  {
+    "id": 21,
+    "country": "Ecuador",
+    "rarity": "2.80"
+  },
+  {
+    "id": 22,
+    "country": "Morocco",
+    "rarity": "3.73"
+  },
+  {
+    "id": 23,
+    "country": "Cameroon",
+    "rarity": "4.66"
+  },
+  {
+    "id": 24,
+    "country": "Canada",
+    "rarity": "4.66"
+  },
+  {
+    "id": 25,
+    "country": "Japan",
+    "rarity": "4.66"
+  },
+  {
+    "id": 26,
+    "country": "Qatar",
+    "rarity": "4.66"
+  },
+  {
+    "id": 27,
+    "country": "Tunisia",
+    "rarity": "5.59"
+  },
+  {
+    "id": 28,
+    "country": "South Korea",
+    "rarity": "7.46"
+  },
+  {
+    "id": 29,
+    "country": "Australia",
+    "rarity": "4.46"
+  },
+  {
+    "id": 30,
+    "country": "Iran",
+    "rarity": "9.32"
+  },
+  {
+    "id": 31,
+    "country": "Saudi Arabia",
+    "rarity": "9.32"
+  },
+  {
+    "id": 32,
+    "country": "Costa Rica",
+    "rarity": "18,64"
+  }
+]

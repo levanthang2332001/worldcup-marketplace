@@ -1,16 +1,38 @@
 import { AppProps } from 'next/app';
 
+import { configureChains, createConfig, WagmiConfig } from 'wagmi';
+import { publicProvider } from 'wagmi/providers/public';
 import '@/styles/globals.css';
-// !STARTERCONF This is for demo purposes, remove @/styles/colors.css import immediately
 import '@/styles/colors.css';
+import '@/styles/styles.css';
 
-/**
- * !STARTERCONF info
- * ? `Layout` component is called in every page using `np` snippets. If you have consistent layout across all page, you can add it here too
- */
+import { NextUIProvider, createTheme } from '@nextui-org/react';
+import { ChakraProvider } from '@chakra-ui/react';
+import { bscTestnet } from 'viem/chains';
+import { ApolloProvider } from '@apollo/client';
+import { WFCIMarket } from '@/apollo/client';
+
+const { publicClient, webSocketPublicClient } = configureChains(
+  [bscTestnet],
+  [publicProvider()]
+);
+
+const config = createConfig({
+  autoConnect: true,
+  publicClient,
+  webSocketPublicClient,
+});
 
 function MyApp({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />;
+  return (
+    <ApolloProvider client={WFCIMarket}>
+      <ChakraProvider>
+        <WagmiConfig config={config}>
+          <Component {...pageProps} />
+        </WagmiConfig>
+      </ChakraProvider>
+    </ApolloProvider>
+  );
 }
 
 export default MyApp;

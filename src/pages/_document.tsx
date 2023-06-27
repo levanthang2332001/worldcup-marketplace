@@ -5,14 +5,11 @@ export default function Document() {
     <Html lang='en'>
       <Head>
         <link
-          rel='preload'
-          href='/fonts/inter-var-latin.woff2'
-          as='font'
-          type='font/woff2'
-          crossOrigin='anonymous'
+          href='https://api.fontshare.com/v2/css?f[]=panchang@700&display=swap'
+          rel='stylesheet'
         />
       </Head>
-      <body>
+      <body className='bg-[#080A0C]'>
         <Main />
         <NextScript />
       </body>

@@ -5,8 +5,16 @@ export default {
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
   theme: {
     extend: {
+      backgroundImage: {
+        'custom-gradient':
+          'linear-gradient(102.88deg, #80E8DD 10.19%, #7CC2F6 43.04%, #AF81E4 72%, #D855A6 93.18%)',
+      },
+      gradientColorStops: {
+        'custom-gradient':
+          'linear-gradient(102.88deg, #80E8DD 10.19%, #7CC2F6 43.04%, #AF81E4 72%, #D855A6 93.18%)',
+      },
       fontFamily: {
-        primary: ['Inter', ...defaultTheme.fontFamily.sans],
+        primary: ['Panchang', ...defaultTheme.fontFamily.sans],
       },
       colors: {
         primary: {
@@ -23,6 +31,7 @@ export default {
           900: 'rgb(var(--tw-color-primary-900) / <alpha-value>)',
           950: 'rgb(var(--tw-color-primary-950) / <alpha-value>)',
         },
+        holo: 'linear-gradient(102.88deg, #80E8DD 10.19%, #7CC2F6 43.04%, #AF81E4 72%, #D855A6 93.18%)',
         dark: '#222222',
       },
       keyframes: {
