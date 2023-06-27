@@ -122,6 +122,7 @@ export default function Asset() {
             listed.map((items) => {
               return (
                 <CardNFTs
+                  key={items.tokenId}
                   id={items.tokenId}
                   team={items.country}
                   rarity={items.rarity}

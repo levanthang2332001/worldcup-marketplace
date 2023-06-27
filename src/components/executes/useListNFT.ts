@@ -29,7 +29,7 @@ export const useCheckApproved = (address: string) => {
 };
 
 export const useApproveNFTs = () => {
-  const approved: boolean = true;
+  const approved = true;
   const { config } = usePrepareContractWrite({
     address: CONTRACT_NFT as `0x${string}`,
     abi: ABINFT,

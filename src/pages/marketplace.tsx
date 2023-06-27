@@ -51,6 +51,7 @@ export default function MarketPlace() {
               <Skeleton height='20rem' width='80%' />
             ) : (
               <CardNFTs
+                key={e.tokenId}
                 id={e.tokenId}
                 team={e.country}
                 rarity={e.rarity}
